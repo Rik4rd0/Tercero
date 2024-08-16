@@ -6,6 +6,7 @@ import terceroRoutes from './routes/routes.js';
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+
 app.use(cors());
 app.use(express.json());
 app.use('/tercero', terceroRoutes);
@@ -18,6 +19,6 @@ try {
 }
 
 app.listen(PORT, () => {
-    console.log('Server is running on port 5000 http://localhost:5000');
+    console.log(`Server is running on port ${PORT}`);
     }
 );

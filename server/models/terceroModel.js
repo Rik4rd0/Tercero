@@ -38,6 +38,7 @@ const TerceroModel = db.define('tercero', {
     tableName: 'tercero',
     timestamps: false
 });
+
 //sincronizamos el modelo con la base de datos
 (async () => {
     try {
