@@ -60,27 +60,27 @@ const CompShowTercero = () => {
             <div className='container-fluid justify-content-center'>
                 <div className="d-flex flex-wrap justify-content-center">
                     {tercero.map((tercero) => (
-                        <div className="card mb-4 transparent-card mx-2" style={{ width: '24rem' }} key={tercero.id}>
-                            <div className="card-header">
-                                <h5 className="card-title">Registro</h5>
-                            </div>
-                            <div className="card-body">
-                                <h6 className="card-text mb-2">Identificación: <small>{tercero.identificacion}</small></h6>
-                                <h6 className="card-text mb-2">Tipo de persona: <small>{tercero.tipoPersona}</small></h6>
-                                <h6 className="card-text mb-2">Dígito verificación: <small>{tercero.digitoVerificacion}</small></h6>
-                                <h6 className="card-text mb-2">Nombre representante legal: <small>{tercero.nombreRepresentanteLegal}</small></h6>
-                                <h6 className="card-text mb-2">Tipo de actividad: <small>{tercero.tipoActividad}</small></h6>
-                                <h6 className="card-text mb-2">Tipo cliente: <small>{tercero.tipoCliente}</small></h6>
-                                <div className="d-flex justify-content-center">
-                                    <Link to={`/edit/${tercero.id}`} className="btn btn-black mb-2 me-2 btn-large">
-                                        <i className="fa-solid fa-pen-to-square"></i>
-                                    </Link>
-                                    <button onClick={() => deleteTercero(tercero.id)} className="btn btn-red mb-2 btn-large">
-                                        <i className="fa-solid fa-trash"></i>
-                                    </button>
-                                </div>
+                        <div className="card mb-4 mx-2 bg-dark text-white" style={{ width: '24rem' }} key={tercero.id}>
+                        <div className="card-header">
+                            <h5 className="card-title">Registro</h5>
+                        </div>
+                        <div className="card-body">
+                            <h6 className="card-text mb-2">Identificación: <small>{tercero.identificacion}</small></h6>
+                            <h6 className="card-text mb-2">Tipo de persona: <small>{tercero.tipoPersona}</small></h6>
+                            <h6 className="card-text mb-2">Dígito verificación: <small>{tercero.digitoVerificacion}</small></h6>
+                            <h6 className="card-text mb-2">Nombre representante legal: <small>{tercero.nombreRepresentanteLegal}</small></h6>
+                            <h6 className="card-text mb-2">Tipo de actividad: <small>{tercero.tipoActividad}</small></h6>
+                            <h6 className="card-text mb-2">Tipo cliente: <small>{tercero.tipoCliente}</small></h6>
+                            <div className="d-flex justify-content-center">
+                                <Link to={`/edit/${tercero.id}`} className="btn btn-black mb-2 me-2 btn-large">
+                                    <i className="fa-solid fa-pen-to-square"></i>
+                                </Link>
+                                <button onClick={() => deleteTercero(tercero.id)} className="btn btn-red mb-2 btn-large">
+                                    <i className="fa-solid fa-trash"></i>
+                                </button>
                             </div>
                         </div>
+                    </div>
                     ))}
                 </div>
             </div>
