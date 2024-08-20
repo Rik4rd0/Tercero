@@ -72,11 +72,11 @@ const CompShowTercero = () => {
                                 <h6 className="card-text mb-2">Tipo de actividad: <small>{tercero.tipoActividad}</small></h6>
                                 <h6 className="card-text mb-2">Tipo cliente: <small>{tercero.tipoCliente}</small></h6>
                                 <div className="d-flex justify-content-center">
-                                    <Link to={`/edit/${tercero.id}`} className="btn btn-light mb-2 me-2 btn-large">
-                                        <i className="fa-solid fa-pen-to-square"></i>
+                                    <Link to={`/edit/${tercero.id}`} className="btn-icon mb-2 me-2">
+                                        <i className="fa-solid fa-pen-to-square icon-white icon-large"></i>
                                     </Link>
-                                    <button onClick={() => deleteTercero(tercero.id)} className="btn btn-danger mb-2 btn-large">
-                                        <i className="fa-solid fa-trash"></i>
+                                    <button onClick={() => deleteTercero(tercero.id)} className="btn-icon mb-2">
+                                        <i className="fa-solid fa-trash icon-white icon-large"></i>
                                     </button>
                                 </div>
                             </div>
